@@ -1,0 +1,43 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+*.spec.bak
+
+# ---- 虚拟环境 ----
+.venv/
+venv/
+env/
+
+# ---- 工具缓存 ----
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# ---- 打包产物（exe / 安装程序体积大，不进仓库）----
+installer/*.exe
+installer/*.iss.bak
+dist/
+build/
+
+# ---- 运行时数据（用户数据实际在 %APPDATA%/NewsHotspots，这里只是兜底）----
+*.db
+*.sqlite3
+exports/
+logs/
+settings_v4.json
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
